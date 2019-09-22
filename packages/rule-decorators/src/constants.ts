@@ -1,0 +1,1 @@
+export const TEXTLINT_RULES = "TEXTLINT_RULES";

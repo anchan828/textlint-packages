@@ -1,0 +1,8 @@
+.idea
+node_modules
+packages/*/dist
+.DS_Store
+packages/*/coverage
+coverage
+lerna-debug.log
+packages/*/LICENSE
