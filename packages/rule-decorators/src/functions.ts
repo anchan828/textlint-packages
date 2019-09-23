@@ -47,7 +47,7 @@ const createReportHandler = <T extends { new (...args: any[]): {} }>(
   };
 };
 
-export const createReportModule = <T extends { new (...args: any[]): {} }>(rules: T[]): TextlintRuleModule<T> => {
+export const createReportModule = <T extends { new (...args: any[]): {} }>(rules: T[]): TextlintRuleModule => {
   const reporter = createReportHandler<T>(rules);
   return { fixer: reporter, linter: reporter };
 };
