@@ -12,7 +12,7 @@
     "@textlint/ast-node-types": "4.2.5",
     "@textlint/types": "1.2.3",
     "@types/glob": "7.1.1",
-    "@types/jest": "24.0.21",
+    "@types/jest": "24.0.22",
     "@types/node": "11.15.2",
     "@types/prettier": "1.18.3",
     "@typescript-eslint/eslint-plugin": "2.6.1",
