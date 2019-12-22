@@ -1,6 +1,6 @@
 {
   "name": "@anchan828/textlint-rule-decorators",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "anchan828 <anchan828@gmail.com>",
