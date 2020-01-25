@@ -19,16 +19,24 @@ describe("createReportModule", (): void => {
   describe("Run module", () => {
     const tester: TextLintTester = new TextLintTester();
 
-    tester.run("should compile no rule class", createReportModule<any>([class Test {}]), {
-      valid: [{ text: "test" }],
-    });
+    tester.run(
+      "should compile no rule class",
+      createReportModule<any>([class Test {}]),
+      {
+        valid: [{ text: "test" }],
+      },
+    );
 
     @TextlintRule()
     class Test1 {}
 
-    tester.run("should compile rule class", createReportModule<any>([Test1]), {
-      valid: [{ text: "test" }],
-    });
+    tester.run(
+      "should compile rule class",
+      createReportModule<any>([Test1]),
+      {
+        valid: [{ text: "test" }],
+      },
+    );
 
     @TextlintRule()
     class Test2 {
@@ -36,9 +44,13 @@ describe("createReportModule", (): void => {
       test(): void {}
     }
 
-    tester.run("should compile rule class, but no repoter", createReportModule<any>([Test2]), {
-      valid: [{ text: "test" }],
-    });
+    tester.run(
+      "should compile rule class, but no repoter",
+      createReportModule<any>([Test2]),
+      {
+        valid: [{ text: "test" }],
+      },
+    );
 
     @TextlintRule()
     class Test3 {
@@ -56,9 +68,13 @@ describe("createReportModule", (): void => {
       }
     }
 
-    tester.run("should compile rule class, but no repoter", createReportModule<any>([Test3]), {
-      invalid: [{ errors: [{ message: "error" }], output: "valid", text: "error" }],
-      valid: [{ text: "test" }],
-    });
+    tester.run(
+      "should compile rule class, but no repoter",
+      createReportModule<any>([Test3]),
+      {
+        invalid: [{ errors: [{ message: "error" }], output: "valid", text: "error" }],
+        valid: [{ text: "test" }],
+      },
+    );
   });
 });
