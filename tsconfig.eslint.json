@@ -6,7 +6,8 @@
     "packages/*/src/**/*.ts",
     "scripts/**/*.ts",
     "packages/*/scripts/**/*.ts",
-    "**/*.js"
+    "**/*.js",
+    ".eslintrc.js"
   ],
   "exclude": ["node_modules"]
 }
