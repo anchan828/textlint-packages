@@ -9,7 +9,7 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.1",
     "@commitlint/config-conventional": "12.1.1",
-    "@textlint/ast-node-types": "4.4.2",
+    "@textlint/ast-node-types": "4.4.3",
     "@textlint/types": "1.5.4",
     "@types/glob": "7.1.3",
     "@types/jest": "26.0.23",
