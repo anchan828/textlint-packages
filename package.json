@@ -45,8 +45,8 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "format": "prettier --write '**/*.{json,yml,yaml,md,graphql}'",
-    "lint": "eslint --ignore-pattern packages && lerna run lint",
-    "lint:fix": "eslint --ignore-pattern packages && lerna run lint:fix",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
     "postinstall": "npm run bootstrap && npm run build",
     "publish": "lerna publish --yes patch",
     "test": "lerna run --parallel test && npx @anchan828/merge-coverage"
