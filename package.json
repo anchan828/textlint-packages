@@ -10,7 +10,7 @@
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
     "@textlint/ast-node-types": "12.0.0",
-    "@textlint/types": "12.0.0",
+    "@textlint/types": "12.0.2",
     "@types/glob": "7.1.4",
     "@types/jest": "26.0.24",
     "@types/node": "16.0.0",
