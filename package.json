@@ -7,8 +7,8 @@
   },
   "description": "Monorepo packages for textlint (TypeScript)",
   "devDependencies": {
-    "@commitlint/cli": "15.0.0",
-    "@commitlint/config-conventional": "15.0.0",
+    "@commitlint/cli": "16.0.1",
+    "@commitlint/config-conventional": "16.0.0",
     "@textlint/ast-node-types": "12.1.0",
     "@textlint/types": "12.1.0",
     "@types/glob": "7.2.0",
