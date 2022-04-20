@@ -1,41 +1,41 @@
 {
   "name": "@anchan828/textlint-rule-decorators",
   "version": "0.0.129",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "author": "anchan828 <anchan828@gmail.com>",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/anchan828/packages/tree/master/packages/rule-decorators#readme",
   "bugs": {
     "url": "https://github.com/anchan828/textlint-packages/issues"
   },
-  "dependencies": {
-    "reflect-metadata": "0.1.13",
-    "textlint-rule-helper": "2.2.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anchan828/packages.git"
   },
-  "description": "> TODO: description",
+  "license": "MIT",
+  "author": "anchan828 <anchan828@gmail.com>",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "directories": {
     "dist": "dist"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/anchan828/packages/tree/master/packages/rule-decorators#readme",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anchan828/packages.git"
-  },
   "scripts": {
-    "prepublishOnly": "rm -rf dist && npm run build && rm -f dist/*.tsbuildinfo && npm run copy:license",
-    "copy:license": "cp ../../LICENSE ./",
     "build": "tsc -p tsconfig.build.json",
+    "copy:license": "cp ../../LICENSE ./",
     "lint": "eslint --ignore-path ../../.eslintignore '**/*.ts'",
     "lint:fix": "npm run lint -- --fix",
-    "watch": "tsc --watch",
+    "prepublishOnly": "rm -rf dist && npm run build && rm -f dist/*.tsbuildinfo && npm run copy:license",
     "test": "jest --coverage --runInBand --detectOpenHandles --forceExit",
     "test:debug": "node --inspect-brk ../../node_modules/jest/bin/jest --runInBand --logHeapUsage",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "reflect-metadata": "0.1.13",
+    "textlint-rule-helper": "2.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
