@@ -28,8 +28,8 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.0.3",
-    "@commitlint/config-conventional": "17.0.3",
+    "@commitlint/cli": "17.1.1",
+    "@commitlint/config-conventional": "17.1.0",
     "@lerna-lite/cli": "1.11.1",
     "@textlint/ast-node-types": "12.2.1",
     "@textlint/types": "12.2.1",
