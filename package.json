@@ -31,7 +31,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@lerna-lite/cli": "^1.11.3",
-    "@textlint/ast-node-types": "^12.2.1",
+    "@textlint/ast-node-types": "^12.2.2",
     "@textlint/types": "^12.2.1",
     "@types/glob": "^8.0.0",
     "@types/jest": "^29.0.3",
